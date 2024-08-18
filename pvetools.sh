@@ -3777,9 +3777,10 @@ main(){
 clear
 if [ $L = "en" ];then
     OPTION=$(whiptail --title " PveTools   Version : 2.5.0 " --menu "
-Github: https://github.com/ivanhao/pvetools
+Github: https://github.com/kirileec/pvetools
+This is a fork version, because ivanhao/pvetools not release for so long time.
 Please choose:" 25 60 15 \
-    "b" "Config apt source(change to ustc.edu.cn and so on)." \
+    "b" "Config apt source(change to nju.edu.cn and so on)." \
     "c" "Install & config samba or NFS." \
     "d" "Install mailutils and config root email." \
     "e" "Config zfs_arc_max & Install zfs-zed." \
@@ -3798,9 +3799,11 @@ Please choose:" 25 60 15 \
     3>&1 1>&2 2>&3)
 else
     OPTION=$(whiptail --title " PveTools   Version : 2.5.0 " --menu "
-Github: https://github.com/ivanhao/pvetools
+Github: https://github.com/kirileec/pvetools
+这是一个fork修改版，原版由于没咋更新，还不支持新版的pve
+目前仅完成了换源和去除订阅提示，其他尚未完成（还是原版的样子）
 请选择相应的配置：" 25 60 15 \
-    "b" "配置apt国内源(更换为ustc.edu.cn,去除企业源等)" \
+    "b" "配置apt国内源(nju.edu.cn,去除企业源等)" \
     "c" "安装配置samba或NFS" \
     "d" "安装配置root邮件通知" \
     "e" "安装配置zfs最大内存及zed通知" \

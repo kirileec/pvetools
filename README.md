@@ -22,7 +22,7 @@ for english user,please look the end of readme.
 
 ```
 export LC_ALL=en_US.UTF-8
-apt update && apt -y install git && git clone https://github.com/ivanhao/pvetools.git
+apt update && apt -y install git && git clone https://github.com/kirileec/pvetools.git
 cd pvetools
 ./pvetools.sh
 ```
@@ -30,7 +30,7 @@ cd pvetools
 ### 一键无脑安装:
 
 ```
-echo "nameserver  8.8.8.8" >> /etc/resolv.conf && rm -rf pvetools && rm -rf /etc/apt/sources.list.d/pve-enterprise.list && export LC_ALL=en_US.UTF-8 && apt update && apt -y install git && git clone https://github.com/ivanhao/pvetools.git && echo "cd /root/pvetools && ./pvetools.sh" > pvetools/pvetools && chmod +x pvetools/pvetools* && ln -s /root/pvetools/pvetools /usr/local/bin/pvetools && pvetools
+echo "nameserver  8.8.8.8" >> /etc/resolv.conf && rm -rf pvetools && rm -rf /etc/apt/sources.list.d/pve-enterprise.list && export LC_ALL=en_US.UTF-8 && apt update && apt -y install git && git clone https://github.com/kirileec/pvetools.git && echo "cd /root/pvetools && ./pvetools.sh" > pvetools/pvetools && chmod +x pvetools/pvetools* && ln -s /root/pvetools/pvetools /usr/local/bin/pvetools && pvetools
 ```
 
 ###### 方式二：下载zip安装
@@ -136,6 +136,16 @@ zm （来源qq）
 **锐 (来源支付宝)
 
 # [版本说明]
+
+##### v2.5.0
+个人修改，以使之兼容 pve 8.2.x
+
+- [x] 使用nju.edu.cn的镜像源
+- [x] 下载一些github资源时使用ghproxy
+- [x] 去除订阅提示时，proxmoxlib.js 兼容 pve 8.2.4 的文件结构
+- [ ] cpu 温度等显示兼容新版（未完成）
+
+
 
 ##### v2.4.0
 
